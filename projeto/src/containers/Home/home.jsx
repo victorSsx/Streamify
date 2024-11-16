@@ -1,16 +1,12 @@
-import {} from "react"
-import {useHistory} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 const Home = () => {
-    const history = useHistory();
+    const navigate = useNavigate();
+
     const handleLogout = () => {
     localStorage.removeItem('isloggedIn');
-    history.push('/');
+    navigate('/');
     };
-
-    if(!localStorage.getItem('isLoggedIn')) {
-        history.push('/');
-        }
 
     return(
         <div>
