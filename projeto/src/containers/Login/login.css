@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+
+}
+div{
+    text-align: center;
+    margin: 0 auto;
+}
+input{
+    margin-top: 10px;
+}
+input:focus{
+    outline: none;
+}
+button{
+    margin-top: 12px;
+}
+button:hover{
+    background-color: aliceblue;
+    color: black;
+}
