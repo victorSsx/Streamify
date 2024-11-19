@@ -1,17 +1,15 @@
-import {useNavigate} from 'react-router-dom';
+import Banner from "./Banner/banner"
+import Header from "./Header/header"
+
+import './home.css'
 
 const Home = () => {
-    const navigate = useNavigate();
 
-    const handleLogout = () => {
-    localStorage.removeItem('isloggedIn');
-    navigate('/');
-    };
+    return (
 
-    return(
         <div>
-            <h1>hello, bem vindo ao meu site!</h1>
-            <button onClick={handleLogout}>Sair</button>
+            <Header />
+            <Banner />
         </div>
     )
 }
